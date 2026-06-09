@@ -51,20 +51,7 @@ export default function Cart() {
                   $
                 </p>
               </div>
-              <div className="border-l pl-5 flex flex-col justify-between">
-                <Button>
-                  <HiOutlinePlus size="20" />
-                </Button>
-                <Button>
-                  <HiMinus size="20" />
-                </Button>
-                <Button
-                  variant="destructive"
-                  className="bg-red-500 hover:bg-red-400"
-                >
-                  <HiOutlineTrash size="20" />
-                </Button>
-              </div>
+
             </div>
           ))}
         </div>
