@@ -67,7 +67,29 @@ export default function Checkout() {
               <DatePickerWithPresets disabled={!scheduled} />
             </div>
           </div>
-
+          <div className="mt-3">
+            <Label className="text-lg">Payment method</Label>
+            <div className="flex gap-5 mt-5">
+              <RadioGroup defaultValue="comfortable" className="flex">
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem
+                    value="online"
+                    id="r1"
+                    className="border border-gray-400"
+                  />
+                  <Label htmlFor="r1">Online payment</Label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem
+                    value="cash"
+                    id="r2"
+                    className="border border-gray-400"
+                  />
+                  <Label htmlFor="r2">Cash on delivery</Label>
+                </div>
+              </RadioGroup>
+            </div>
+          </div>
         </div>
       </div>
       <div className="max-w-lg w-full">
