@@ -50,7 +50,23 @@ export default function Checkout() {
             <Label className="text-lg">Scheduled Delivery</Label>
             <Switch onClick={() => setScheduled(!scheduled)} />
           </div>
-
+          <div className="flex gap-5 mt-5">
+            <div className="w-full">
+              <Label htmlFor="note">Note</Label>
+              <Input
+                disabled={!scheduled}
+                type="text"
+                id="note"
+                className="mt-3"
+              />
+            </div>
+            <div className="w-full flex flex-col mt-2">
+              <Label className="mb-3" htmlFor="name">
+                Date
+              </Label>
+              <DatePickerWithPresets disabled={!scheduled} />
+            </div>
+          </div>
           <div className="mt-3">
             <Label className="text-lg">Payment method</Label>
             <div className="flex gap-5 mt-5">
