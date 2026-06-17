@@ -31,7 +31,16 @@ export default function Checkout() {
                 <Input type="text" id="name" className="mt-2" />
               </div>
             </div>
-
+            <div className="w-full space-y-5">
+              <div>
+                <Label htmlFor="name">Phone</Label>
+                <Input type="text" id="name" className="mt-2" />
+              </div>
+              <div>
+                <Label htmlFor="name">City</Label>
+                <Input type="text" id="name" className="mt-2" />
+              </div>
+            </div>
           </div>
           <div className="mt-5">
             <Label htmlFor="name">Address</Label>
