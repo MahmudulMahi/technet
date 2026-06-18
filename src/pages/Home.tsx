@@ -25,19 +25,7 @@ export default function Home() {
           <img src={banner} alt="" />
         </div>
       </div>
-      <div className="mb-96">
-        <div>
-          <img className="mx-auto" src={hero} alt="" />
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-black text-primary uppercase mt-10">
-            The future of tech is here
-          </h1>
-          <Button className="mt-10" asChild>
-            <Link to="/products">Brows all products</Link>
-          </Button>
-        </div>
-      </div>
+
       <Footer />
     </>
   );
