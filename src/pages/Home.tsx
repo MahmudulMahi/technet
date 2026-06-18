@@ -21,9 +21,7 @@ export default function Home() {
           </div>
           <Button className="mt-5">Learn more</Button>
         </div>
-        <div className="relative -right-14">
-          <img src={banner} alt="" />
-        </div>
+
       </div>
       <div className="mb-96">
         <div>
