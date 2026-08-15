@@ -54,13 +54,7 @@ export function SignupForm({ className, ...props }: UserAuthFormProps) {
               {...register('password', { required: 'Password is required' })}
             />
             {errors.password && <p>{errors.password.message}</p>}
-            <Input
-              id="password"
-              placeholder="confirm password"
-              type="password"
-              autoCapitalize="none"
-              autoCorrect="off"
-            />
+
           </div>
           <Button>Create Account</Button>
         </div>
