@@ -43,7 +43,17 @@ export default function ProductReview({ id }: IProps) {
           <FiSend />
         </Button>
       </form>
-
+      <div className="mt-10">
+        {dummyComments.map((comment, index) => (
+          <div key={index} className="flex gap-3 items-center mb-5">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+            <p>{comment}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
