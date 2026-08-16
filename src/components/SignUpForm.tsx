@@ -35,15 +35,7 @@ export function SignupForm({ className, ...props }: UserAuthFormProps) {
             <Label className="sr-only" htmlFor="email">
               Email
             </Label>
-            <Input
-              id="email"
-              placeholder="name@example.com"
-              type="email"
-              autoCapitalize="none"
-              autoComplete="email"
-              autoCorrect="off"
-              {...register('email', { required: 'Email is required' })}
-            />
+
             {errors.email && <p>{errors.email.message}</p>}
             <Input
               id="password"
@@ -54,7 +46,13 @@ export function SignupForm({ className, ...props }: UserAuthFormProps) {
               {...register('password', { required: 'Password is required' })}
             />
             {errors.password && <p>{errors.password.message}</p>}
-
+            <Input
+              id="password"
+              placeholder="confirm password"
+              type="password"
+              autoCapitalize="none"
+              autoCorrect="off"
+            />
           </div>
           <Button>Create Account</Button>
         </div>
