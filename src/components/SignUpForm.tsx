@@ -35,7 +35,15 @@ export function SignupForm({ className, ...props }: UserAuthFormProps) {
             <Label className="sr-only" htmlFor="email">
               Email
             </Label>
-
+            <Input
+              id="email"
+              placeholder="name@example.com"
+              type="email"
+              autoCapitalize="none"
+              autoComplete="email"
+              autoCorrect="off"
+              {...register('email', { required: 'Email is required' })}
+            />
             {errors.email && <p>{errors.email.message}</p>}
             <Input
               id="password"
